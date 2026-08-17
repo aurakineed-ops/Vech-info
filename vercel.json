@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "rc.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "rc.py"
+    }
+  ],
+  "env": {
+    "BEARER_TOKEN": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJDb3ZlcnN1cmUgVG9rZW4iLCJleHAiOjE3OTQwNzYyMDB9.w8sY27y824Ob6arlimlLGNH-qzHfEBTDf9hMNW0P5WXO0wXv2mv8Ut6wCoI1Gb-q19GvFjQoDicBWCxNLn1IVQ",
+    "USER_TOKEN": "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjI0MDY0MSwiY2xpZW50SWQiOiIyNTIzMTQ5MDI4NzdDIiwic3ViIjoiOTQ1MjM1Mzk5OSIsImlhdCI6MTc4NjM3OTY4OX0.T_OwQAWwFDaX8Nrk02WOL4wTy2HpKwYRKjXlgASRoIVDQY-STRhmLOAGCLaqu2QxKK3PG68lVjY8iu7BqU92Vg"
+  }
+}
